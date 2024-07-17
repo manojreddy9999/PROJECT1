@@ -1,0 +1,80 @@
+div{
+    background-color:white;
+    border: 2px solid white;
+    height: 600px;
+    
+}
+.abc{
+    color: blue;
+    font-size: 60px;
+}
+#a{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    /* background-color: white; */
+    border: 0px solid black;
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+    font-size: 25px;
+    word-spacing: 3px;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+#b{
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    background-color: white;
+    margin-top: 200px;
+    margin-left: 150px;
+    border: 1px solid rgb(135, 126, 126);
+    display: inline-block;
+    height: 300px;
+    width: 350px;
+
+}
+.idpass:focus{
+    outline-color: aqua;
+}
+.idpass{
+    border-color: rgb(229, 228, 228);
+    color: rgb(121, 107, 107);
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 30px;
+    width: 300px;
+}
+#forgot{
+    margin-left: 100px;
+    color: blue;
+}
+
+.btn{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(83, 83, 245);
+    cursor: pointer;
+}
+
+#abc1:hover{
+    background-color: rgb(43, 117, 43);
+}
+
+#abc1{
+    border: none;
+    margin-top: 10px;
+    margin-left: 70px;
+    color: white;
+    background-color: rgb(84, 194, 84);
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 15px;
+}

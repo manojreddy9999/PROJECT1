@@ -1,0 +1,65 @@
+*{
+    background-color: #1a8d6e;
+    /* display: flex; */
+    justify-content: center;
+}
+.div1{
+    text-align: center;
+    color: #b6d8cf;
+    display: block;
+    height: 150px;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    
+}
+.h{
+    color: #99fa99;
+    font-weight: normal;  
+    cursor: pointer;
+    font-size: 50px;
+    margin: 10px;
+}
+nav{
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 50px;
+}
+li a{
+    text-decoration: none;
+    color: #b6d8cf;
+    font-size: 20px;
+}
+.a1:hover{
+    color: plum;
+}
+section{
+    /* display:inline-block ; */
+    height: 900px;
+    width: 960px;
+    /* text-align: center; */
+    position: relative;
+    left: 270px;
+    margin-top: -10px;
+    background-color: white;
+    background-image: url(./yoga.jpg);
+    background-repeat: no-repeat;
+    background-position:  600px center;
+}
+footer{
+    position: relative;
+    top:20px;
+    margin-left: 275px;
+    margin-top: 0px;
+    color: #b6d8cf;
+    /* font-size: 15px; */
+    
+}
+footer div{
+    font-size: 30px;
+    margin-bottom: -10px;
+    color: #99fa99;
+}

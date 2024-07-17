@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung</title>
+    <style>
+        #div1{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #imgg{
+            padding-top: 10px;
+        }
+        .imgg1{
+            padding-top: 15px;
+        }
+        #div2{
+            height: 600px;
+            background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/1440x640-copy-21.jpg?imwidth=1536);
+        }
+        #subd2{
+            color: white;
+            font-size: x-large;
+            text-align: right;
+            align-items: center;
+            transform: translate(-150px,200px)
+        }
+        .but1{
+            height: 50px;
+            width: 100px;
+            color: black;
+            background-color: white;
+            border-radius: 30px;
+        }
+        #subd4,#subd3{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        /* #subd5{
+            border: 2px solid red;
+            display: grid;
+            height: 700px;
+            /* width: 800px; */
+            /* grid-template-rows: 200px,100px,100px;
+            grid-template-columns: 200px,100px,100px;
+        }
+        .TV{
+            grid-row-start: 1;
+            grid-row-end: 3;
+        } */ */
+
+        div4{
+            height: 780px;
+            width: 680px;
+            margin: 70px;
+        /* border: 2px solid red; */
+        }
+        .d1{
+            height: 600px;
+            width: 500px;
+            border-radius: 30px;
+            background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/Banner_684x684px_3.jpg?$684_684_JPG$);
+        }
+        .d1:hover{
+            transition:all 0.3s ;
+            transform: scale(1.02);
+        }
+        .div5{
+            height: 600px;
+            width: 500px;
+            /* border: 2px solid red; */
+            margin: 40px 10px;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 300px 300px;
+            grid-column-gap: 50px;
+            grid-row-gap: 50px;
+            padding: 40px;
+        }
+        main{
+            display: flex;
+        }
+        .d2{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/Fold5-Flip5-Small_Tile_330x3302.jpg?$330_330_JPG$);
+        }
+        .d2:hover{
+            transition:all 0.3s ;
+            transform: scale(1.1);
+        }
+        .d3{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/0814/SmallTile_330x330-EPPGeneric.jpg?$330_330_JPG$);
+        }
+        .d3:hover{
+            transition:all 0.3s ;
+            transform: scale(1.1);
+        }
+        .d4{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/Small_Tile_330x330_8kg_AI_Ecobubble.jpg?$330_330_JPG$);
+        }
+        .d4:hover{
+            transition:all 0.3s ;
+            transform: scale(1.1);
+        }
+        .d5{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/TabS9_Series_330x3303.jpg?$330_330_JPG$);
+        }
+        .d5:hover{
+            transition:all 0.3s ;
+            transform: scale(1.1);
+        }
+
+        #div4{
+            background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/0814/Fold5ProductMarketing_1440x810.jpg?$1440_810_JPG$);
+            height: 850px;
+        }
+        #subd6{
+            text-align: center;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #subd7{
+            display: flex;
+            justify-content: space-evenly;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #subd8{
+            display: flex;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transform: translate(-10px,450px);
+        }
+        #start{
+            transform: translate(-180px,50px);
+        }
+        #div5{
+            background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/Neo_Qled_8K_1440x810.jpg?$1440_810_JPG$);
+            height: 810px;
+        }
+        #subd9{
+            color: white;
+            text-align: center;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #subd10{
+            /* color: white; */
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        .oled{
+            color: white;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #subd11{
+            color: white;
+            display: flex;
+            justify-content: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transform: translate(-10px,450px);
+        }
+        #qld{
+            color: white;
+            transform: translate(-180px,50px);
+        }
+        #div6{
+            background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/12kg-AI-ecobubble-with-AI.jpg?$1440_810_JPG$);
+            height: 700px;
+        }
+        #subd12{
+            text-align: center;
+        }
+        #subd13{
+            /* color: white; */
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        .home{
+            color: black;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #hmapl{
+            color: black;
+            transform: translate(300px,400px);
+        }
+        #div7{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #div8{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .wash{
+            /* border: 2px solid black; */
+            /* transform: translateX(20px); */
+            height: 400px;
+            width: 300px;
+            background-color: rgb(225, 224, 224);
+            text-align: center;
+        }
+        .butt2{
+            color: white;
+            background-color: black;
+            border-radius: 25px;
+            width: 200px;
+            height: 30px;
+        }
+        .but2{
+            color: black;
+            background-color: white;
+            border-radius: 15px;
+            width: 60px;
+            height: 25px;
+        }
+        #div9{
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #div10{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #tips{
+            font-size: x-large;
+            transform: translateY(100px);
+        }
+        #div11{
+            text-align: center;
+            font-size: xx-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #div12{
+            border-radius: 30px;
+            color: black;
+            background-color: white;
+        }
+        input{
+            height: 30px;
+            transform: translateX(400px);
+            border-radius: 20px;
+        }
+        .imggg1{
+            transform: translate(400px,5px);
+        }
+        .p1{
+            display: inline;
+            /* justify-content: space-between; */
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .p1:hover{
+            background-color: rgb(230, 227, 227);
+        }
+        #div13{
+            text-align: center;
+        }
+        #div14{
+            font-size: small;
+        }
+        #footdiv{
+            display: flex;
+            justify-content: space-evenly;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: small;
+        }
+        .ft{
+            font-size: x-small;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        hr{
+            width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <img id="imgg" src="https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/gnb-desktop-120x32.png" height="30px" width="100px" alt="">
+        <a href=""><p>Shop</p></a>
+        <a href=""><p>mobile</p></a>
+        <a href=""><p>TV & AV</p></a>
+        <a href=""><p>Home appliances</p></a>
+        <a href=""><p>Laptop & Monitors</p></a>
+        <a href=""><p>Displays</p></a>
+        <a href=""><p>Accesories</p></a>
+        <a href=""><p>Smartthings</p></a>
+        <a href=""><p>Support</p></a>
+        <a href=""><p>For buisness</p></a>
+        <img class="imgg1" src="https://cdn-icons-png.flaticon.com/128/149/149852.png" height="20px" width="20px" alt="">
+        <img class="imgg1" src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png" height="20px" width="20px" alt="">
+        <img class="imgg1" src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" height="20px" width="20px" alt="">
+        <img class="imgg1" src="https://cdn-icons-png.flaticon.com/128/3502/3502458.png" height="20px" width="20px" alt="">
+    </div>
+    <div id="div2">
+        <div id="subd2">
+            <h1><b>An Eco-bubble <br> washing machine</b></h1>
+            <p>Intelligent wash.powerful clean <br></p>
+            <p>Get up to 15% with instant bank discount</p>
+            <button class="but1"><a href="">Buy now</a></button>
+        </div>
+    </div>
+    <div id="div3">
+        <div id="subd3">
+            <h1>This weeks highlights.</h1>
+        </div>
+        <div id="subd4">
+            <a href=""><p>New in</p></a>
+            <a href=""><p>Mobile</p></a>
+            <a href=""><p>TV</p></a>
+            <a href=""><p>Appliances</p></a>
+            <a href=""><p>Galaxy eco-system</p></a>
+            <a href=""><p>Samsung live</p></a>
+        </div>
+        <main>
+            <div class="div4">
+                <div class="d1"></div>
+            </div>
+            <div class="div5">
+                <div class="d2">
+    
+                </div>
+                <div class="d3">
+    
+                </div>
+                <div class="d4">
+    
+                </div>
+                <div class="d5">
+    
+                </div>
+    
+            </div>
+        </main>
+    </div><br><br><br><br>
+    <div id="div4">
+        <div id="subd6"> <br>
+            <h1><b>Mobile and computing</b></h1>
+        </div>
+        <div id="subd7">
+            <a href=""><p>Galaxy Z fold 5</p></a>
+            <a href=""><p>Galaxy Z flip 5</p></a>
+            <a href=""><p>Galaxy tab S9 series</p></a>
+            <a href=""><p>Galaxy watch | Galaxy watch 6 classic</p></a>
+            <a href=""><p>Galaxy S23 Ultra</p></a>
+        </div>
+        <div id="subd8">
+            <div>
+                <h1><b>Galaxy Z Fold5</b></h1><br>
+            </div>
+            <div id="start">
+                <p>Starting 136999*</p>
+                <p>Avail benefits worth up to 18000*</p>
+                <button class="but1"><a href="">Buy now</a></button>
+
+            </div>
+            
+        </div>
+    </div>
+    <div id="div5">
+        <br>
+        <div id="subd9">
+            <h1><b>TV & AV</b></h1>
+        </div>
+        <div id="subd10">
+            <a href="" class="oled"><p>Neo Qled</p></a>
+            <a href="" class="oled"><p>QLED</p></a>
+            <a href="" class="oled"><p>Samsung OLED</p></a>
+            <a href="" class="oled"><p>The frame</p></a>
+            <a href="" class="oled"><p>The freestyle</p></a>
+        </div>
+        <div id="subd11">
+            <div>
+                <h1><b>Neo QLED</b></h1>
+            </div>
+            <div id="qld">
+                <p>Starting 59396*/month</p>
+                <p>Incl. 20000* off with instant bank acccount</p>
+                <button class="but1"><a href="">Buy now</a></button>
+            </div>
+        </div>
+    </div>
+    <div id="div6"> <br>
+        <div id="subd12">
+            <h1><b>Home Appliances</b></h1>
+        </div>
+        <div id="subd13">
+            <a href="" class="home"><p>8.0 Eco-buble</p></a>
+            <a href="" class="home"><p>BESPOKE side by side</p></a>
+            <a href="" class="home"><p>Convertible 5in1 AC</p></a>
+            <a href="" class="home"><p>BESPOKE microwave</p></a>
+            <a href="" class="home"><p>JetBot+</p></a>
+        </div>
+        <div id="hmapl">
+            <p>Starting 62088*</p>
+            <p>Including 5413* off with instant bank discount and app voucher</p>
+            <button class="but1"><a href="">Buy now</a></button>
+        </div>
+    </div>
+    <div id="div7">
+        <h1><b>Recommended products</b></h1>
+    </div>
+    <div id="div8">
+        <div class="wash">
+            <img src="https://images.samsung.com/is/image/samsung/p6pim/in/wa70bg4545bdtl/gallery/in-wa4000b-432792-wa70bg4545bdtl-thumb-533344236?$216_216_PNG$" height="150px" width="150px" alt="">
+            <p>7.0 Eco-bubble Top-load <br>Washing machine with...</p>
+            <button class="but2">7.0kg</button>
+            <p>$21800</p>
+            <p>No cost EMI starts from <br>1816 per mmonth</p>
+            <button class="butt2">Buy now</button>
+        </div>
+        <div class="wash">
+            <img src="https://images.samsung.com/is/image/samsung/p6pim/in/wa10bg4686brtl/gallery/in-wa4000b-435227-wa10bg4686brtl-thumb-533661235?$216_216_PNG$" height="150px" width="150px" alt="">
+            <p>10.0 Eco-bubble Top-load <br>Washing machine with...</p>
+            <button class="but2">10.0kg</button>
+            <p>$28999</p>
+            <p>No cost EMI starts from <br>2129 per mmonth</p>
+            <button class="butt2">Buy now</button>
+        </div>
+        <div class="wash">
+            <img src="https://images.samsung.com/is/image/samsung/p6pim/in/wa70bg4441bgtl/gallery/in-wa4000b-433542-wa70bg4441bgtl-thumb-533454755?$216_216_PNG$" height="150px" width="150px" alt="">
+            <p>7.0 Eco-bubble Top-load <br>Washing machine with...</p>
+            <button class="but2">7.0kg</button>
+            <p>$18999</p>
+            <p>No cost EMI starts from <br>1515 per mmonth</p>
+            <button class="butt2">Buy now</button>
+        </div>
+        <div class="wash">
+            <img src="https://images.samsung.com/is/image/samsung/p6pim/in/wa90bg4582bdtl/gallery/in-wa4000b-433547-wa90bg4582bdtl-thumb-533455632?$216_216_PNG$" height="150px" width="150px" alt="">
+            <p>9.0 Eco-bubble Top-load <br>Washing machine with...</p>
+            <button class="but2">7.0kg</button>
+            <p>$26700</p>
+            <p>No cost EMI starts from <br>2225 per mmonth</p>
+            <button class="butt2">Buy now</button>
+        </div>
+    </div>
+    <div id="div9">
+        <h1><b>Explore #Dowhatyoucant</b></h1>
+    </div>
+    <div id="div10">
+        <img src="https://images.samsung.com/is/image/samsung/assets/in/p6_gro1/p6_initial_explore_detail/life-hacks/mx0147_tips-for-navigating-big-life-changes/mx0147_home-explore-banner_pc_684x684.jpg?$684_684_PNG$"  alt="">
+        <div id="tips">
+            <p><b>1. Tips for navigating big life changes</b></p>
+            <p><b>2. Feel free to Freestyle</b></p>
+            <p><b>3. 3Hosting tips to alliviate holiday  stress</b></p>
+            <p><b>4. Meet G·NUSMAS, the curious extraterrestrial</b></p>
+            <p><b>5. Top 10 are here!</b></p>
+        </div>
+    </div>
+    <div id="div11">
+        <p><b>Looking for something else ?</b></p>
+    </div>
+    <div id="div12">
+        <img class="imggg1" src="https://cdn-icons-png.flaticon.com/128/149/149852.png" height="20px" width="20px" alt="">
+        <input type="text" name="Search keyword" id="searckey" placeholder="Search for keyword" size="60px">
+    </div><br>
+    <div id="div13">
+        <p class="p1">Galaxy Z flip 5</p>
+        <p class="p1">Galaxy Z fold 5</p>
+        <p class="p1">QLED 8k</p>
+        <p class="p1">UHD TV's</p>
+        <p class="p1">Eco-Bubble</p>
+    </div><br><br>
+    <div id="div14">
+        <p>* Image simulated for illustrative purpose. Actual UX/UI may differ.</p>
+        <p>* S Pen Fold Edition sold separately and is only compatible with Z Fold5, Z Fold4 and Z Fold3. Flex mode supported at angles between 75˚ and 115˚.</p>
+        <p>* Image simulated. Color and model availability may vary depending on country or carrier.</p>
+        <p>* Galaxy Tab S9, Tab S9+, Tab S9 Ultra is rated as IP68. Based on test condition for submersion in up to 1.5 meter of fresh water for up to 30 mins. Not advised for beach or pool use.</p>
+        <p>* 5G Devices are 5G ready, connectivity dependent on network availability. </p>
+        <p>* Images shown here are for representational purpose only, actual may vary. All features, specifications and prices are subject to change without prior notice. Model availability may vary from location to location.</p>
+        <p>* Image simulated. S Pen Fold Edition sold separately and is only compatible with Galaxy Z Fold4 and Galaxy Z Fold3.</p>
+        <p>* Watch screen image simulated for illustrative purpose. Availability of colours, sizes, models, and watch bands may vary by country or carrier.</p>
+        <p>* Image simulated. Available colours of Galaxy Buds2 Pro may vary by country or carrier.</p>
+        <p># T&C Apply. Cashback at the sole discretion of the issuer / NBFC.</p>
+        <p>** Product launch dates vary from country to country. Some products may be launched earlier in few countries. </p>
+        <p>* Offer valid on select models only.</p>
+    </div>
+    <div id="footdiv">
+        <div>
+            <p><b>Product & Service</b></p>
+            <p>Smartphones</p>
+            <p>Tablets</p>
+            <p>Audio Sound</p>
+            <p>Watches</p>
+            <p>Smart Switch</p>
+            <p>Mobile Accessories</p>
+            <p>TVs</p>
+            <p>Sound Devices</p>
+            <p>Refrigerators</p>
+            <p>Laundry</p>
+            <p>Air Solutions</p>
+            <p>Cooking Appliances</p>
+            <p>Monitors</p>
+            <p>Memory Storage</p>
+        </div>
+        <div>
+            <p><b>Shop</b></p>
+            <p>FAQs</p>
+            <p>Contact Us</p>
+            <p>Welcome Voucher</p>
+            <p>Samsung Referral Advantage</p>
+            <p>Samsung Student Advantage</p>
+            <p>Defence Purchase Program</p>
+            <p>Corporate Employee Program</p>
+            <p>Corporate Bulk Purchase</p>
+            <p>Samsung Experience Store</p>
+            <p>Store Locator</p>
+            <p>Smart Club</p>
+            <p>Terms of Use</p>
+            <p>Grievance Redressal</p>
+            <p>Explore</p>
+        </div>
+        <div>
+            <p><b>Support</b></p>
+            <p>WhatsApp Us (हिंदी/ English) </p>
+            <p>Sign Language</p>
+            <p>Email Us</p>
+            <p>Call Us</p>
+            <p>Email the CEO</p>
+            <p>Community </p>
+            <p>Product Registration</p>
+            <p>Service Centre</p>
+            <p>Share Your Opinion </p>
+        </div>
+        <div>
+            <p><b>Account & Community</b></p>
+            <p>My Page</p>
+            <p>My Products</p>
+            <p>Orders</p>
+            <p>Wishlist</p>
+            <p>My Referrals</p>
+            <p>Vouchers</p>
+            <p>Service</p>
+            <p>Community</p>
+        </div>
+        <div>
+            <p><b>Sustainability</b></p>
+            <p>Environment</p>
+            <p>Security & Privacy</p>
+            <p>Accessibility</p>
+            <p>Diversity · Equity · Inclusion</p>
+            <p>Corporate Citizenship</p>
+            <p>Corporate Sustainability </p><br>
+            <p><b>About Us</b></p>
+            <p>Company Info</p>
+            <p>Business Area</p>
+            <p>Brand Identity</p>
+            <p>Careers</p>
+            <p>Investor Relations </p>
+            <p>Newsroom</p>
+            <p>Ethics</p>
+            <p>Samsung Design</p>
+        </div>
+    </div>
+    <br>
+    <p class="ft">Copyright ⓒ 1995-2023 SAMSUNG All Rights reserved.</p>
+    <p class="ft">Please dispose of e-waste and plastic waste responsibly.</p>
+    <p class="ft">For more information or e-waste pick up, please call 1800 5 7267864 or click here for more details.</p><br>
+    <p class="ft">Registered Office Address: 6th Floor, DLF Centre, Sansad Marg, New Delhi-110001</p>
+    <p class="ft">Corporate Identification Number (CIN): U31900DL1995PTC071387</p>
+    <hr>
+</body>
+</html>

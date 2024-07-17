@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head{
+            background-image: url(https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/hero-bg.png);
+            /* background-image: url(https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/hero-angle-shape-2.svg); */
+            height: 600px;
+        }
+        #div1{
+            display: flex;
+            justify-content: space-evenly;
+            transform: translateY(40px);
+        }
+        .but{
+            height: 30px;
+            width: 130px;
+            color: white;
+            background-color: rgb(255, 20, 98);
+            border-radius: 50px;
+        }
+        .home:hover{
+            color: deeppink;
+        }
+        .but1{
+            height: 40px;
+            width: 130px;
+            color: white;
+            background-color: rgb(255, 20, 98);
+            border-radius: 50px;
+        }
+        .home{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: large;
+            color: black;
+            text-decoration: none;
+        }
+        #div2{
+            display: flex;
+            justify-content: space-evenly;
+            transform: translateY(100px);
+        }
+        .over{
+            font-size: xxx-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .subd1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* .img1{
+            background-image: url(https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/hero-img-shape.png);
+            height: 350px;
+            width: 450px;
+            position: absolute;
+            top: 50px;
+            left: 800px;
+            border: 2px solid aqua;
+            z-index: -1px;
+        } */
+        .abus{
+            font-size: medium;
+            color: deeppink;
+        }
+        #div3{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .getbut{
+            color: white;
+            text-decoration: none;
+        }
+        #maindiv4{
+            height: 500px;
+            background-color: rgb(255, 20, 98);;
+        }
+        #div5{
+            font-size: larger;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        #div4{
+            color: white;
+        }
+        .design{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: white;
+            height: 300px;
+            /* width: 300px; */
+        }
+        .ui{
+            color: rgb(255, 20, 98);
+            text-decoration: underline;
+            transform: translateX(10px);
+        }
+        .ux{
+            transform: translateX(20px);
+        }
+        .portfolio{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .port{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: xxx-large;
+        }
+        .graphic{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .allbut{
+            height: 30px;
+            width: 100px;
+            border-radius: 50px;
+            border: 2px solid deeppink;
+        }
+        .graphicall{
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            text-decoration: none;
+        }
+        .demo{
+            transform: translateY(-250px);
+        }
+        .demo1{
+            transform: translate(354px,-250px);
+        }
+        .demo2{
+            /* border: 2px solid red; */
+            transform: translate(354px,-250px);
+        }
+        #demodiv{
+            /* border: 2px solid red; */
+            height: 500px;
+        }
+        .month{
+            border: 1px solid deeppink;
+            height: 40px;
+            width: 100px;
+            border-radius: 50px;
+            border-color: deeppink;
+            background-color: white;
+        }
+        .year{
+            border: none;
+            background-color: white;
+        }
+        #monthly{
+            /* transform: translateX(550px); */
+            text-align: center;
+            /* background-color: white; */
+        }
+        #plans{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .silver,.cheat{
+            text-align: center;
+        }
+        .silverdiv{
+            height: 400px;
+            width: 300px;
+            /* border: 1px solid white; */
+            box-shadow: 0px 0px 4px rgb(186, 186, 186);
+        }
+        .dollar{
+            font-size: xx-large;
+            color: deeppink;
+        }
+        .purchase{
+            border: none;
+            border-radius: 50px;
+            text-align: center;
+            height: 50px;
+            width: 150px;
+            background-color: rgb(255, 20, 98);
+            color: white;
+        }
+        .join{
+            font-size: xx-large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            transform: translateY(100px);
+            color: white;
+            text-align: center;
+        }
+        .joinbut{
+            color: white;
+            background-color:rgb(255, 20, 98) ;
+            height: 50px;
+            width: 100px;
+            border-radius: 50px;
+        }
+        #join{
+            background-color: black;
+            height: 400px;
+        }
+        #team{
+            /* background-color: rgb(211, 209, 209); */
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .heroine{
+            text-align: center;
+        }
+        .heroine1{
+            border-radius: 60px;
+        }
+        /* .hero{
+            width: 200px;
+            border: 2px solid black;
+        } */
+        #buisness{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .buiss{
+            color: deeppink;
+            font-size: xx-large;
+        }
+        #view{
+            text-align: center;
+            font-size: x-large;
+        }
+        .all{
+            border-radius: 50px;
+            height: 40px;
+            width: 100px;
+            background-color: deeppink;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="div1">
+            <div>
+                <img src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/logo.png" alt="">
+            </div>
+            <a href="" class="home">Home</a>
+            <a href="" class="home">About us</a>
+            <a href="" class="home">Services</a>
+            <a href="" class="home">Blog</a>
+            <a href="" class="home">Pages</a>
+            <a href="" class="home">Contact us</a>
+            <div>
+                <button class="but"><a href="" class="getbut">Get a Quote</a></button>
+            </div>
+        </div><br><br>
+        <div id="div2">
+            <div class="subd1">
+                <h1 class="over"><b>Overcoming <br> Biggest Obstacles</b></h1>
+                <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do <br> amet sint. Velit officia consequat duis enim velit mollit. Exercitation <br> veniam consequat sunt nostrud amet.</p>
+                <br><br>
+                <button class="but1"><a href="" class="getbut">Learn More</a></button>
+            </div>
+            <div>
+                <img class="img1" src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/hero-img.png" height="300px" width="400px" alt="">
+            </div>
+        </div>
+    </div><br><br>
+    <div id="div3">
+        <div>
+            <img src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/about-us-img.png" height="400px" width="450px" alt="">
+        </div>
+        <div class="subd1">
+            <h1 class="abus">ABOUT US__</h1>
+            <h1>Strategic partnerships for <br> maximum impact.</h1>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor <br> ametsint. Velit officia consequ mollit. Exercitation veniam consequat <br> sunt nostrud amet. <br>Amet minim mollit non deserunt ullamcot sit aliqua dolor do amet <br> sint. Velit officia consequat duis.Amet minim mollit non deserunt <br> ullamcot sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+            <button class="but1"><a href="" class="getbut">Read More</a></button>
+        </div>
+    </div><br><br>
+    <div id="maindiv4">
+        <div id="div4">
+            <p>SERVICE_</p>
+            <h1 class="over">What we're Offering</h1>
+        </div>
+        <div id="div5">
+            <div class="design"><br>
+                <img class="ux" src="https://cdn-icons-png.flaticon.com/128/1072/1072020.png" height="40px" width="40px" alt=""><br>
+                <p class="ui"><b>UI/UX Design</b></p>
+                <p>Amet minim mmollit non desurant <br>ullamco est sit aliqua dolor do amet <br> sint. vellit officia consequat. </p>
+            </div>
+            <div class="design"><br>
+                <img class="ux" src="https://cdn-icons-png.flaticon.com/128/1260/1260103.png" height="40px" width="40px" alt=""><br>
+                <p class="ui"><b>Digital Marketing</b></p>
+                <p>Amet minim mmollit non desurant <br>ullamco est sit aliqua dolor do amet <br> sint. vellit officia consequat. </p>
+            </div>
+            <div class="design"><br>
+                <img class="ux" src="https://cdn-icons-png.flaticon.com/128/1197/1197460.png" height="40px" width="40px" alt="">
+                <p class="ui"><b>Web development</b></p>
+                <p>Amet minim mmollit non desurant <br>ullamco est sit aliqua dolor do amet <br> sint. vellit officia consequat. </p>
+            </div>
+        </div>
+    </div><br><br>
+    <p class="portfolio">_PORTFOLIO_</p>
+    <h1 class="port"><b>Visit our latest work here</b></h1>
+    <div class="graphic">
+        <button class="allbut"><a href="" class="graphicall">All</a></button>
+        <a href="" class="graphicall">Graphic</a>
+        <a href="" class="graphicall">Illustration</a>
+        <a href="" class="graphicall">Photography</a>
+        <a href="" class="graphicall">Web Design</a>
+    </div> <br> <br>
+    <div id="demodiv">
+        <img src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/portfolio/portfolio-img-1.png" height="500px" width="350px" alt="">
+        <img class="demo" src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/portfolio/portfolio-img-2.png" height="250px" width="400px" alt="">
+        <img class="demo" src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/portfolio/portfolio-img-3.png" height="250px" width="400px" alt="">
+        <img class="demo1" src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/portfolio/portfolio-img-4.png" height="250px" width="400px" alt="">
+        <img class="demo2" src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/portfolio/portfolio-img-5.png" height="250px" width="400px" alt="">
+    </div><br><br>
+    <p class="portfolio">_PRICINGS_</p>
+    <h1 class="port">Best Pricings</h1>    
+    <div id="monthly">
+        <button class="month">Monthly</button>
+        <button class="year">Yearly</button>
+    </div><br>
+    <div id="plans">
+        <div class="silverdiv">
+            <h1 class="silver">Silver</h1>
+            <p class="cheat"><b class="dollar">$9.99</b>/per month</p>
+            <p class="cheat">Cheat Boosted Shots in popular</p>
+            <p class="cheat">No Viral Traffic</p>
+            <p class="cheat">Limited Monthly Shots</p>
+            <p class="cheat">Paid Animation Shots</p>
+            <p class="cheat">Paid Attaches</p>
+            <p class="cheat"><button class="purchase">Purchase Now</button></p>
+        </div>
+        <div class="silverdiv">
+            <h1 class="silver">Gold</h1>
+            <p class="cheat"><b class="dollar">$29.99</b>/per month</p>
+            <p class="cheat">Cheat Boosted Shots in popular</p>
+            <p class="cheat">No Viral Traffic</p>
+            <p class="cheat">Limited Monthly Shots</p>
+            <p class="cheat">Paid Animation Shots</p>
+            <p class="cheat">Paid Attaches</p>
+            <p class="cheat"><button class="purchase">Purchase Now</button></p>
+        </div>
+        <div class="silverdiv">
+            <h1 class="silver">Platinum</h1>
+            <p class="cheat"><b class="dollar">$49.99</b>/per month</p>
+            <p class="cheat">Cheat Boosted Shots in popular</p>
+            <p class="cheat">No Viral Traffic</p>
+            <p class="cheat">Limited Monthly Shots</p>
+            <p class="cheat">Paid Animation Shots</p>
+            <p class="cheat">Paid Attaches</p>
+            <p class="cheat"><button class="purchase">Purchase Now</button></p>
+        </div>
+    </div><br><br>
+    <div id="join">
+        <h1 class="join">Can’t find your desired service? Let us know.</h1>
+        <p class="join"><button class="joinbut">Join Now </button></p>
+    </div><br><br>
+    <p class="portfolio">_TEAM_</p>
+    <h1 class="port">Meet Our Creative Excelence</h1>    
+    <div id="team">
+        <div class="hero">
+            <p><img class="heroine1" src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/team/team-img-1.png" alt=""></p>
+            <p class="heroine"><b>Darell Stewerd</b></p>
+            <p class="heroine">CEO Elency</p>
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" height="30px" width="30px" alt="">
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/665/665209.png" height="30px" width="30px" alt="">
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/665/665212.png" height="30px" width="30px" alt="">
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/665/665213.png" height="30px" width="30px" alt="">
+        </div>
+        <div class="hero">
+            <p><img class="heroine1" src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/team/team-img-2.png" alt=""></p>
+            <p class="heroine"><b>Wade Warren</b></p>
+            <p class="heroine">COO Elency</p>
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" height="30px" width="30px" alt="">
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/665/665209.png" height="30px" width="30px" alt="">
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/665/665212.png" height="30px" width="30px" alt="">
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/665/665213.png" height="30px" width="30px" alt="">
+        </div>
+        <div class="hero">
+            <p><img class="heroine1" src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/team/team-img-3.png" alt=""></p>
+            <p class="heroine"><b>Darell Stewerd</b></p>
+            <p class="heroine">Creative head,Elency</p>
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" height="30px" width="30px" alt="">
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/665/665209.png" height="30px" width="30px" alt="">
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/665/665212.png" height="30px" width="30px" alt="">
+            <img class="heroine" src="https://cdn-icons-png.flaticon.com/128/665/665213.png" height="30px" width="30px" alt="">
+        </div>
+    </div><br><br>
+    <p class="portfolio">_BLOGS_</p>
+    <h1 class="port">See whats new from us</h1>  
+    <div id="buisness">
+        <div>
+            <img src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/blog/blog-img-1.png" height="350px" width="600px" alt="">
+            <p class="buiss"><b>Buisness tips_</b></p>
+            <p>your most unhappy customers are your great source of learning</p>
+        </div>
+        <div>
+            <img src="https://demo-egenslab.b-cdn.net/html/elency/v3/assets/images/blog/blog-img-2.png" height="350px" width="600px" alt="">
+            <p class="buiss"><b>Buisness Tips_</b></p>
+            <p>The happy customers are our great source of asset</p>
+        </div>
+    </div>
+    <p id="view"><Button class="all">view all</Button></p>
+</body>
+</html>

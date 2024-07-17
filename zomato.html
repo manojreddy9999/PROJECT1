@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato webpage</title>
+    <style>
+#div1{
+    /* border: 2px solid red; */
+    text-align: right;
+    padding-right: 30px;
+    /* word-spacing: 30px; */
+    padding: 10px;
+    box-sizing: border-box; 
+    background-image: url(https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png);
+    height: 410px;
+    width: 1240px;   
+}
+.a1{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+h3{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    margin-top: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#p{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#div2{
+    text-align: left;
+    margin-left: 215px;
+
+}
+.sel{
+    border-radius: 5px;
+    height: 50px;
+    width: 400px;
+}
+#nav1{
+    /* border: 2px solid red; */
+    height: 250px;
+    width: 1090px;
+    padding: 10px;
+}
+#outer-div{
+    /* border: 2px solid red; */
+    height: 380px;
+    width: 1090px;
+    display: inline-block;
+    margin-left: 90px;
+    box-sizing: border-box;
+}
+
+#div3{
+    /* border: 2px solid red; */
+    height: 150px;
+    width: 350px;
+    border-radius: 6px;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px grey;
+}
+#div3:hover{
+    cursor: pointer;
+}
+#div4{
+    /* border: 2px solid red; */
+    height: 150px;
+    width: 350px;
+    border-radius: 6px;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px grey;
+}
+#div4:hover{
+    cursor: pointer;
+    
+}
+#div5{
+    /* border: 2px solid red; */
+    height: 150px;
+    width: 350px;
+    border-radius: 6px;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px grey;
+}
+#div5:hover{
+    cursor: pointer;
+}
+ #nav2{
+    /* border: 2px solid red; */
+    padding: 30px;  
+} 
+#div6{
+    /* border: 2px solid red; */
+    height: 150px;
+    width: 1200px;
+}
+#a2{
+    display: inline-block;
+    text-decoration: none;
+    color: maroon;
+    padding-left: 300px;
+}
+#para1{
+    display: inline-block;
+    font-size: 19px;
+}
+#div7{
+    /* border: 2px solid black; */
+    height: 400px;
+    width: 1150px;
+    margin-left: 50px;
+}
+#div8{
+    /* border: 2px solid violet; */
+    height: 300px;
+    width: 250px;
+    background-image: url(./download1zom.jpeg); 
+    padding-top: 267px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.anchor1{
+    text-decoration: none;
+    color: white;
+}
+#div9{
+    /* border: 2px solid violet; */
+    height: 300px;
+    width: 250px;
+    background-image: url(./download2zom.jpeg); 
+    padding-top: 267px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+#div10{
+    /* border: 2px solid violet; */
+    height: 300px;
+    width: 250px;
+    background-image: url(./download3zom.jpeg); 
+    padding-top: 267px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+#div11{
+    /* border: 2px solid violet; */
+    height: 300px;
+    width: 250px;
+    background-image: url(./download4zom.jpeg); 
+    padding-top: 267px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+#div12{
+    /* border: 2px solid red; */
+    height:  300px;
+    width: 1100px;
+    margin-top: -50px;
+    font-size: 40px;
+}
+.span1{
+    border-radius: 10px;
+    height: 50px;
+    width: 250px;
+}
+.span1:hover{
+    box-shadow: 0px 0px 10px black;
+}
+#div13{
+    /* border: 2px solid red; */
+    height: 400px;
+    width: 700px;
+    background-color: cornsilk;
+}
+b{
+    margin-left: 100px;
+}
+#i1{
+    /* border: 2px solid red; */
+}
+#p2{
+    text-align: right;
+    margin-top: -100px;
+}
+#dow1{
+    align-items: center;
+}
+#zomparent{
+    display: flex;
+    justify-content: space-between;
+}
+
+    </style>
+</head>
+<body>
+   
+    <header>
+        <div id="div1">
+            <a class="a1" href=""><span>InvestorRelations</span></a>
+            <a class="a1" href=""><span>Addrestaurant</span></a>
+            <a class="a1" href=""><span>Login</span></a>
+            <a class="a1" href=""> <span>Signup</span></a>
+            <h3>Zomato</h3>
+            <p id="p">Discover the best food & drinks in Hyderabad</p>
+            <div id="div2">
+                <select class="sel" name="place" id="">
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Goa">Goa</option>
+                    <option value="AndhraPradesh">AndhraPradesh</option>
+                    <input class="sel" type="text" name="search"  placeholder="Search for resaturant,cusine or a dish">
+                </select>
+            </div>
+        </div>
+    </header>
+    <nav id="nav1">
+        <div id="outer-div">
+            <div id="div3">
+                <img src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="" height="150" width="350">
+                <h2>Order Online</h2>
+                <p>Stay home and order to your doorstep</p>
+            </div>
+            <div id="div4">
+                <img src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="" height="150" width="350">
+                <h2>Dining</h2>
+                <p>View the cities favourite dining venues</p>
+            </div>
+            <div id="div5">
+                <img src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*" alt="" height="150" width="350"> 
+                <h2>Nightlife and clubs</h2>
+                <p>Explore the city's top nightlife outlets</p>
+            </div>
+        </div>
+    </nav>
+    <nav id="nav2">
+        <div id="div6">
+            <h1>Collections</h1>
+            <p id="para1">Explore curated lists of top restaurants, cafes, pubs, and bars in Hyderabad, based on trends</p>
+            <a id="a2" href="">All Collections in Hyderabad</a>
+        </div>
+        <div id="div7">
+            <div id="div8">
+                <a class="anchor1" href="">11 Newley Opened Restaurants</a>
+            </div>
+            <div id="div9"> 
+                <a class="anchor1" href="">17 Best Pubs and Bars</a>
+            </div>
+            <div id="div10">
+                <a class="anchor1" href="">13 Finest Microberries</a>
+            </div>
+            <div id="div11">
+                <a class="anchor1" href="">14 Places For Exotic Cocktail</a>
+            </div>
+        </div>
+    </nav>
+    <body>
+        <div id="div12">
+            <div>
+                <h4>Popular localities in and around Hyderabad</h4>
+            <select class="span1" name="Jubliee Hills" id="">
+                <option value="Jubliee Hills">Jubliee Hills</option>
+             </select>
+             <select class="span1" name="Gachibowli" id="">
+                <option value="Gachibowli">Gachibowli</option>
+             </select>
+            <select class="span1" name="Banjara Hills" id="">
+                <option value="Banjara Hills">Banjara Hills</option>
+            </select>
+            </div>
+            <div>
+                <select class="span1" name="High Tech city " id="">
+                    <option value="High Tech city">High Tech city</option>
+                </select>
+                <select class="span1" name="Madhapur" id="">
+                    <option value="Madhapur">Madhapur</option>
+                </select>
+                <select class="span1" name="Kondapur" id="">
+                    <option value="Kondapur">Kondapur</option>
+                </select>
+            </div>
+        </div>
+        <div id="div13">
+            <img id="i1" src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png" alt="" height="200" width="200"> 
+            <b id="b">Get the Zomato app</b>
+            <p id="p2">We will send you a link , open it in your phone to download it</p>
+            <input class="inp1" type="radio" name="Email" value="Email" >
+            <label class="inp1" for="">Email</label>
+            <input class="inp1" type="radio" name="phone" value="phone">
+            <label class="inp1" for="">Phone</label>
+            <input class="inp1" type="email" name="email" placeholder="Email">
+            <img id="dow1" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="" height="30px" width="80px">
+            <img id="dow1" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="" height="30px" width="80px">
+        </div>
+
+        <div id="zomparent">
+            <div id="zomabout">
+                 <p><b>ABOUT ZOMATO</b></p>
+                 <p>who  we are </p>
+                 <p>blog</p>
+                 <p>work with investors</p>
+                 <p>Investor relations</p>
+                 <p>Report fraud</p>
+                 <p>Contact us</p>
+            </div>
+            <div id="zomaverse">
+                <p><b>ZOMAVERSE</b></p>
+                <p>Zomato</p>
+                <p>Blink it</p>
+                <p>Feeding India</p>
+                <p>Hyperpure</p>
+                <p>Zomaland</p>
+            </div>
+            <div id="forrestaurants">
+                <p><b>FOR RESTAURANTS</b></p>
+                <p>Partner with us</p>
+                <p>Apps for you</p><br>
+                <p><b>FOR ENTERPRISE</b></p>
+                <p>Zomato for enterprise</p>
+            </div>
+            <div id="learnmore">
+                <p><b>LEARN MORE</b></p>
+                <p>Privacy</p>
+                <p>Security</p>
+                <p>Terms</p>
+                <p>Sitemap</p>
+            </div>
+            <div id="sociallinks">
+                <p><b>SOCIAL LINKS</b></p>
+                <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="" height="30px" width="80px"><br>
+                <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="" height="30px" width="80px">
+
+            </div>
+        </div>
+    </body>
+
+</body>
+</html>
